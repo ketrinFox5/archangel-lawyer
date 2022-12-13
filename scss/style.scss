@@ -1,0 +1,354 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.container {
+    margin: 0 135px;
+    padding: 60px 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: 65px;
+    font-weight: 400;
+}
+
+.btn {
+    padding: 16px 35px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: none;
+    text-transform: uppercase;
+    transform: scale(1);
+    transition: all 0.5s linear 0s;
+    cursor: pointer;
+}
+
+.btn_white {
+    background-color: rgb(249, 249, 251);
+    color: #333;
+}
+
+.btn_dark {
+    background-color: #333;
+    color: white;
+}
+
+.btn_small {
+    padding: 16px 35px;
+    width: 18%;
+    max-height: 58px;
+    font-size: 14px;
+}
+
+.btn_big {
+    padding: 18px 45px;
+    font-size: 16px;
+    line-height: 1.62;
+}
+
+.contact-details {
+    display: flex;
+
+        &-img {
+            margin-right: 8px;
+            width: 40px;
+            height: 40px;
+        }
+
+        img {
+            width: 100%;
+        }
+        
+        a {
+            font-size: 26px;
+            color: white;
+        }
+}
+
+.header {
+    // padding: 50px 0;
+    background-color: rgb(37, 53, 81);
+    color: white;
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+    &__link {
+        padding: 20px 30px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+.offer {
+    color: white;
+    background-color: rgb(37, 53, 81);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+    }
+
+    &__info {
+        width: 60%;
+    }
+
+    &__title {
+        font-size: 75px;
+        font-weight: 400;
+        line-height: 75px;
+    }
+
+    &__text {
+        margin: 60px 0;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        font-size: 21px;
+    }
+
+    &__image {
+        margin-top: 100px;
+        width: 360px;
+        max-height: 756px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.about {
+    background-color: #e0e0db;
+
+    .container {
+        h3 {
+            margin-bottom: 45px;
+            width: 65%;
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 46px;
+        }
+    
+        div {
+            margin-bottom: 35px;
+            width: 65%;
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            font-size: 17px;
+        }
+    }
+
+    &__btn {
+        margin-top: 10px;
+    }
+}
+
+.services {
+    background-color: rgb(37, 53, 81);
+    color: white;
+
+    h2 {
+        padding-bottom: 30px;
+        border-bottom: 2px solid white;
+    }
+
+    &__service {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid white;
+
+        &-title {
+            width: 20%;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 40px;
+        }
+
+        &-text {
+            width: 50%;
+            font-family: 'Inter', sans-serif;
+            font-size: 17px;
+            line-height: 162%;
+        }
+    }
+
+    &-btn {
+        width: 18%;
+        max-height: 58px;
+    }
+}
+
+.quote {
+    background-color: #e0e0db;
+
+    &__item {
+        margin-bottom: 45px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 124%;
+    }
+
+    &__author {
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 162%;
+    }
+}
+
+.prices {
+    background-color: rgb(37, 53, 81);
+    color: white;
+
+    &__subtitle {
+        margin-top: 20px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 162%;
+    }
+
+    &__table {
+        margin: 50px 0;
+
+        &-title {
+            padding: 20px 15px;
+            font-family: 'Inter', sans-serif;
+            font-size: 17px;
+            line-height: 21px;
+        }
+
+        // &-title:last-child {
+        //     // width: 90%;
+        //     border-left: 1px solid #bfbdbd;
+        // }
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-right: 1px solid #e0dada;
+            border-left: 1px solid #bfbdbd;
+            border-top: 1px solid #bfbdbd;
+        }
+
+        &-item:last-child {
+            border-bottom: 1px solid #bfbdbd;
+        }
+
+        &-service {
+            padding: 20px 15px;
+            width: 90%;
+            font-size: 26px;
+            line-height: 124%;
+            border-right: 1px solid #bfbdbd;
+        }
+
+        &-price {
+            padding: 20px 15px;
+            width: 15%;
+            font-family: 'Inter', sans-serif;
+            font-size: 17px;
+            line-height: 21px;
+            text-align: right;
+        }
+    }
+}
+
+.contacts {
+    background-color: rgb(37, 53, 81);
+    color: white;
+
+    &__text {
+        margin: 20px 0 30px 0;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 162%;
+    background-color: rgb(37, 53, 81);
+    color: white;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.social-media {
+    display: flex;
+
+    a {
+        width: 40px;
+        height: 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+}

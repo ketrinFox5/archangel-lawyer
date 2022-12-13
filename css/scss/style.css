@@ -1,0 +1,311 @@
+/* line 1, scss/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #333333; }
+
+/* line 9, scss/style.scss */
+div, p, form, input, a, span, button {
+  box-sizing: border-box; }
+
+/* line 13, scss/style.scss */
+ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 18, scss/style.scss */
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* line 24, scss/style.scss */
+p {
+  margin: 0;
+  padding: 0; }
+
+/* line 29, scss/style.scss */
+a {
+  text-decoration: none;
+  background-color: transparent; }
+
+/* line 34, scss/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+/* line 39, scss/style.scss */
+button {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background: transparent; }
+
+/* line 46, scss/style.scss */
+.container {
+  margin: 0 135px;
+  padding: 60px 15px; }
+
+/* line 51, scss/style.scss */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+/* line 57, scss/style.scss */
+h2 {
+  font-size: 65px;
+  font-weight: 400; }
+
+/* line 62, scss/style.scss */
+.btn {
+  padding: 16px 35px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: none;
+  text-transform: uppercase;
+  transform: scale(1);
+  transition: all 0.5s linear 0s;
+  cursor: pointer; }
+
+/* line 74, scss/style.scss */
+.btn_white {
+  background-color: #f9f9fb;
+  color: #333; }
+
+/* line 79, scss/style.scss */
+.btn_dark {
+  background-color: #333;
+  color: white; }
+
+/* line 84, scss/style.scss */
+.btn_small {
+  padding: 16px 35px;
+  width: 18%;
+  max-height: 58px;
+  font-size: 14px; }
+
+/* line 91, scss/style.scss */
+.btn_big {
+  padding: 18px 45px;
+  font-size: 16px;
+  line-height: 1.62; }
+
+/* line 97, scss/style.scss */
+.contact-details {
+  display: flex; }
+  /* line 100, scss/style.scss */
+  .contact-details-img {
+    margin-right: 8px;
+    width: 40px;
+    height: 40px; }
+  /* line 106, scss/style.scss */
+  .contact-details img {
+    width: 100%; }
+  /* line 110, scss/style.scss */
+  .contact-details a {
+    font-size: 26px;
+    color: white; }
+
+/* line 116, scss/style.scss */
+.header {
+  background-color: #253551;
+  color: white; }
+  /* line 121, scss/style.scss */
+  .header__menu {
+    display: flex;
+    justify-content: space-between; }
+  /* line 127, scss/style.scss */
+  .header__link {
+    padding: 20px 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: white; }
+
+/* line 137, scss/style.scss */
+.offer {
+  color: white;
+  background-color: #253551; }
+  /* line 141, scss/style.scss */
+  .offer .container {
+    display: flex;
+    justify-content: space-between; }
+  /* line 147, scss/style.scss */
+  .offer__info {
+    width: 60%; }
+  /* line 151, scss/style.scss */
+  .offer__title {
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 75px; }
+  /* line 157, scss/style.scss */
+  .offer__text {
+    margin: 60px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 21px; }
+  /* line 164, scss/style.scss */
+  .offer__image {
+    margin-top: 100px;
+    width: 360px;
+    max-height: 756px; }
+    /* line 169, scss/style.scss */
+    .offer__image img {
+      width: 100%; }
+
+/* line 175, scss/style.scss */
+.about {
+  background-color: #e0e0db; }
+  /* line 179, scss/style.scss */
+  .about .container h3 {
+    margin-bottom: 45px;
+    width: 65%;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46px; }
+  /* line 187, scss/style.scss */
+  .about .container div {
+    margin-bottom: 35px;
+    width: 65%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 17px; }
+  /* line 196, scss/style.scss */
+  .about__btn {
+    margin-top: 10px; }
+
+/* line 201, scss/style.scss */
+.services {
+  background-color: #253551;
+  color: white; }
+  /* line 205, scss/style.scss */
+  .services h2 {
+    padding-bottom: 30px;
+    border-bottom: 2px solid white; }
+  /* line 210, scss/style.scss */
+  .services__service {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white; }
+    /* line 217, scss/style.scss */
+    .services__service-title {
+      width: 20%;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 40px; }
+    /* line 224, scss/style.scss */
+    .services__service-text {
+      width: 50%;
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      line-height: 162%; }
+  /* line 232, scss/style.scss */
+  .services-btn {
+    width: 18%;
+    max-height: 58px; }
+
+/* line 238, scss/style.scss */
+.quote {
+  background-color: #e0e0db; }
+  /* line 241, scss/style.scss */
+  .quote__item {
+    margin-bottom: 45px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 124%; }
+  /* line 248, scss/style.scss */
+  .quote__author {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 162%; }
+
+/* line 256, scss/style.scss */
+.prices {
+  background-color: #253551;
+  color: white; }
+  /* line 260, scss/style.scss */
+  .prices__subtitle {
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 162%; }
+  /* line 268, scss/style.scss */
+  .prices__table {
+    margin: 50px 0; }
+    /* line 271, scss/style.scss */
+    .prices__table-title {
+      padding: 20px 15px;
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      line-height: 21px; }
+    /* line 283, scss/style.scss */
+    .prices__table-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-right: 1px solid #e0dada;
+      border-left: 1px solid #bfbdbd;
+      border-top: 1px solid #bfbdbd; }
+    /* line 292, scss/style.scss */
+    .prices__table-item:last-child {
+      border-bottom: 1px solid #bfbdbd; }
+    /* line 296, scss/style.scss */
+    .prices__table-service {
+      padding: 20px 15px;
+      width: 90%;
+      font-size: 26px;
+      line-height: 124%;
+      border-right: 1px solid #bfbdbd; }
+    /* line 304, scss/style.scss */
+    .prices__table-price {
+      padding: 20px 15px;
+      width: 15%;
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      line-height: 21px;
+      text-align: right; }
+
+/* line 315, scss/style.scss */
+.contacts {
+  background-color: #253551;
+  color: white; }
+  /* line 319, scss/style.scss */
+  .contacts__text {
+    margin: 20px 0 30px 0; }
+  /* line 323, scss/style.scss */
+  .contacts__info {
+    display: flex;
+    justify-content: space-between; }
+
+/* line 329, scss/style.scss */
+.footer {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 162%;
+  background-color: #253551;
+  color: white; }
+  /* line 337, scss/style.scss */
+  .footer .container {
+    display: flex;
+    justify-content: space-between; }
+
+/* line 343, scss/style.scss */
+.social-media {
+  display: flex; }
+  /* line 346, scss/style.scss */
+  .social-media a {
+    width: 40px;
+    height: 40px; }
+    /* line 350, scss/style.scss */
+    .social-media a img {
+      width: 100%; }
