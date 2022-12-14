@@ -84,41 +84,39 @@ h2 {
 /* line 84, scss/style.scss */
 .btn_small {
   padding: 16px 35px;
-  width: 18%;
-  max-height: 58px;
   font-size: 14px; }
 
-/* line 91, scss/style.scss */
+/* line 89, scss/style.scss */
 .btn_big {
   padding: 18px 45px;
   font-size: 16px;
   line-height: 1.62; }
 
-/* line 97, scss/style.scss */
+/* line 95, scss/style.scss */
 .contact-details {
   display: flex; }
-  /* line 100, scss/style.scss */
+  /* line 98, scss/style.scss */
   .contact-details-img {
     margin-right: 8px;
     width: 40px;
     height: 40px; }
-  /* line 106, scss/style.scss */
+  /* line 104, scss/style.scss */
   .contact-details img {
     width: 100%; }
-  /* line 110, scss/style.scss */
+  /* line 108, scss/style.scss */
   .contact-details a {
     font-size: 26px;
     color: white; }
 
-/* line 116, scss/style.scss */
+/* line 114, scss/style.scss */
 .header {
   background-color: #253551;
   color: white; }
-  /* line 121, scss/style.scss */
+  /* line 119, scss/style.scss */
   .header__menu {
     display: flex;
     justify-content: space-between; }
-  /* line 127, scss/style.scss */
+  /* line 125, scss/style.scss */
   .header__link {
     padding: 20px 30px;
     font-family: 'Inter', sans-serif;
@@ -127,127 +125,127 @@ h2 {
     text-transform: uppercase;
     color: white; }
 
-/* line 137, scss/style.scss */
+/* line 135, scss/style.scss */
 .offer {
   color: white;
   background-color: #253551; }
-  /* line 141, scss/style.scss */
+  /* line 139, scss/style.scss */
   .offer .container {
     display: flex;
     justify-content: space-between; }
-  /* line 147, scss/style.scss */
+  /* line 145, scss/style.scss */
   .offer__info {
     width: 60%; }
-  /* line 151, scss/style.scss */
+  /* line 149, scss/style.scss */
   .offer__title {
     font-size: 75px;
     font-weight: 400;
     line-height: 75px; }
-  /* line 157, scss/style.scss */
+  /* line 155, scss/style.scss */
   .offer__text {
     margin: 60px 0;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 21px; }
-  /* line 164, scss/style.scss */
+  /* line 162, scss/style.scss */
   .offer__image {
     margin-top: 100px;
     width: 360px;
     max-height: 756px; }
-    /* line 169, scss/style.scss */
+    /* line 167, scss/style.scss */
     .offer__image img {
       width: 100%; }
 
-/* line 175, scss/style.scss */
+/* line 173, scss/style.scss */
 .about {
   background-color: #e0e0db; }
-  /* line 179, scss/style.scss */
+  /* line 177, scss/style.scss */
   .about .container h3 {
     margin-bottom: 45px;
     width: 65%;
     font-size: 36px;
     font-weight: 400;
     line-height: 46px; }
-  /* line 187, scss/style.scss */
+  /* line 185, scss/style.scss */
   .about .container div {
     margin-bottom: 35px;
     width: 65%;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 17px; }
-  /* line 196, scss/style.scss */
+  /* line 194, scss/style.scss */
   .about__btn {
     margin-top: 10px; }
 
-/* line 201, scss/style.scss */
+/* line 199, scss/style.scss */
 .services {
   background-color: #253551;
   color: white; }
-  /* line 205, scss/style.scss */
+  /* line 203, scss/style.scss */
   .services h2 {
     padding-bottom: 30px;
     border-bottom: 2px solid white; }
-  /* line 210, scss/style.scss */
+  /* line 208, scss/style.scss */
   .services__service {
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid white; }
-    /* line 217, scss/style.scss */
+    /* line 215, scss/style.scss */
     .services__service-title {
       width: 20%;
       font-weight: 400;
       font-size: 36px;
       line-height: 40px; }
-    /* line 224, scss/style.scss */
+    /* line 222, scss/style.scss */
     .services__service-text {
       width: 50%;
       font-family: 'Inter', sans-serif;
       font-size: 17px;
       line-height: 162%; }
-  /* line 232, scss/style.scss */
-  .services-btn {
+  /* line 230, scss/style.scss */
+  .services__btn {
     width: 18%;
     max-height: 58px; }
 
-/* line 238, scss/style.scss */
+/* line 236, scss/style.scss */
 .quote {
   background-color: #e0e0db; }
-  /* line 241, scss/style.scss */
+  /* line 239, scss/style.scss */
   .quote__item {
     margin-bottom: 45px;
     font-weight: 400;
     font-size: 36px;
     line-height: 124%; }
-  /* line 248, scss/style.scss */
+  /* line 246, scss/style.scss */
   .quote__author {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 17px;
     line-height: 162%; }
 
-/* line 256, scss/style.scss */
+/* line 254, scss/style.scss */
 .prices {
   background-color: #253551;
   color: white; }
-  /* line 260, scss/style.scss */
+  /* line 258, scss/style.scss */
   .prices__subtitle {
     margin-top: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 17px;
     line-height: 162%; }
-  /* line 268, scss/style.scss */
+  /* line 266, scss/style.scss */
   .prices__table {
     margin: 50px 0; }
-    /* line 271, scss/style.scss */
+    /* line 269, scss/style.scss */
     .prices__table-title {
       padding: 20px 15px;
       font-family: 'Inter', sans-serif;
       font-size: 17px;
       line-height: 21px; }
-    /* line 283, scss/style.scss */
+    /* line 281, scss/style.scss */
     .prices__table-item {
       display: flex;
       justify-content: space-between;
@@ -255,17 +253,17 @@ h2 {
       border-right: 1px solid #e0dada;
       border-left: 1px solid #bfbdbd;
       border-top: 1px solid #bfbdbd; }
-    /* line 292, scss/style.scss */
+    /* line 290, scss/style.scss */
     .prices__table-item:last-child {
       border-bottom: 1px solid #bfbdbd; }
-    /* line 296, scss/style.scss */
+    /* line 294, scss/style.scss */
     .prices__table-service {
       padding: 20px 15px;
       width: 90%;
       font-size: 26px;
       line-height: 124%;
       border-right: 1px solid #bfbdbd; }
-    /* line 304, scss/style.scss */
+    /* line 302, scss/style.scss */
     .prices__table-price {
       padding: 20px 15px;
       width: 15%;
@@ -274,13 +272,15 @@ h2 {
       line-height: 21px;
       text-align: right; }
 
-/* line 315, scss/style.scss */
+/* line 313, scss/style.scss */
 .contacts {
   background-color: #253551;
   color: white; }
-  /* line 319, scss/style.scss */
+  /* line 317, scss/style.scss */
   .contacts__text {
-    margin: 20px 0 30px 0; }
+    margin: 20px 0 30px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300; }
   /* line 323, scss/style.scss */
   .contacts__info {
     display: flex;
@@ -297,15 +297,266 @@ h2 {
   /* line 337, scss/style.scss */
   .footer .container {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
 
-/* line 343, scss/style.scss */
+/* line 344, scss/style.scss */
 .social-media {
   display: flex; }
-  /* line 346, scss/style.scss */
+  /* line 347, scss/style.scss */
   .social-media a {
     width: 40px;
     height: 40px; }
-    /* line 350, scss/style.scss */
+    /* line 351, scss/style.scss */
     .social-media a img {
       width: 100%; }
+
+@media screen and (max-width: 1250px) {
+  /* line 358, scss/style.scss */
+  .container {
+    margin: 0 50px; } }
+
+@media screen and (max-width: 1150px) {
+  /* line 364, scss/style.scss */
+  .container {
+    margin: 0 20px;
+    padding: 40px 15px; }
+  /* line 369, scss/style.scss */
+  h2 {
+    font-size: 55px; }
+  /* line 373, scss/style.scss */
+  .contact-details a {
+    font-size: 22px; }
+  /* line 378, scss/style.scss */
+  .offer__title {
+    font-size: 65px; }
+  /* line 382, scss/style.scss */
+  .offer__text {
+    font-size: 18px; }
+  /* line 386, scss/style.scss */
+  .offer__image {
+    margin-top: 60px;
+    width: 320px; }
+  /* line 394, scss/style.scss */
+  .about .container h3 {
+    width: 100%;
+    font-size: 31px; }
+  /* line 399, scss/style.scss */
+  .about .container div {
+    width: 100%; }
+  /* line 407, scss/style.scss */
+  .services__service-title {
+    font-size: 31px; }
+  /* line 411, scss/style.scss */
+  .services__btn {
+    width: 20%; }
+  /* line 417, scss/style.scss */
+  .quote__item {
+    font-size: 31px; }
+  /* line 424, scss/style.scss */
+  .prices__table-service {
+    font-size: 22px; } }
+
+@media screen and (max-width: 952px) {
+  /* line 433, scss/style.scss */
+  body {
+    font-size: 17px; }
+  /* line 437, scss/style.scss */
+  h2 {
+    font-size: 50px; }
+  /* line 441, scss/style.scss */
+  .btn_big {
+    padding: 16px 35px;
+    font-size: 14px; }
+  /* line 446, scss/style.scss */
+  .btn_small {
+    padding: 14px 25px;
+    font-size: 12px; }
+  /* line 452, scss/style.scss */
+  .header__link {
+    font-size: 15px; }
+  /* line 458, scss/style.scss */
+  .offer__title {
+    font-size: 58px; }
+  /* line 462, scss/style.scss */
+  .offer__image {
+    margin-top: 40px;
+    width: 280px; }
+  /* line 470, scss/style.scss */
+  .about .container h3 {
+    margin-bottom: 35px;
+    font-size: 28px;
+    line-height: 38px; }
+  /* line 476, scss/style.scss */
+  .about .container div {
+    margin-bottom: 25px; }
+  /* line 483, scss/style.scss */
+  .contact-details {
+    align-items: center; }
+    /* line 485, scss/style.scss */
+    .contact-details a {
+      font-size: 20px; }
+    /* line 489, scss/style.scss */
+    .contact-details-img {
+      margin-right: 6px;
+      width: 30px;
+      height: 30px; }
+  /* line 498, scss/style.scss */
+  .services__service-title {
+    width: 25%;
+    font-size: 28px; }
+  /* line 503, scss/style.scss */
+  .services__service-text {
+    width: 45%;
+    font-size: 15px; }
+  /* line 508, scss/style.scss */
+  .services__btn {
+    max-height: 48px; }
+  /* line 514, scss/style.scss */
+  .quote__item {
+    font-size: 28px; }
+  /* line 518, scss/style.scss */
+  .quote__author {
+    font-size: 15px; }
+  /* line 525, scss/style.scss */
+  .prices__table-service {
+    font-size: 20px; }
+  /* line 529, scss/style.scss */
+  .prices__table-price {
+    width: 20%;
+    font-size: 15px; }
+  /* line 536, scss/style.scss */
+  .footer {
+    font-size: 15px; } }
+
+@media screen and (max-width: 815px) {
+  /* line 543, scss/style.scss */
+  body {
+    font-size: 15px; }
+  /* line 547, scss/style.scss */
+  h2 {
+    font-size: 40px; }
+  /* line 551, scss/style.scss */
+  .btn_big {
+    padding: 14px 30px; }
+  /* line 555, scss/style.scss */
+  .container {
+    padding: 20px 10px; }
+  /* line 560, scss/style.scss */
+  .header nav {
+    justify-content: center; }
+  /* line 564, scss/style.scss */
+  .header__menu {
+    display: none; }
+  /* line 571, scss/style.scss */
+  .offer .container {
+    flex-direction: column;
+    align-items: center; }
+  /* line 576, scss/style.scss */
+  .offer__title {
+    font-size: 52px; }
+  /* line 580, scss/style.scss */
+  .offer__info {
+    width: 100%;
+    text-align: center; }
+  /* line 585, scss/style.scss */
+  .offer__text {
+    margin: 30px 0; }
+  /* line 589, scss/style.scss */
+  .offer__image {
+    margin-top: 30px; }
+  /* line 594, scss/style.scss */
+  .contact-details {
+    justify-content: center; }
+    /* line 597, scss/style.scss */
+    .contact-details-img {
+      width: 25px;
+      height: 25px; }
+  /* line 605, scss/style.scss */
+  .about .container h3 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 35px; }
+  /* line 611, scss/style.scss */
+  .about .container div {
+    margin-bottom: 20px; }
+  /* line 619, scss/style.scss */
+  .services__service {
+    padding: 20px 0;
+    flex-direction: column; }
+    /* line 623, scss/style.scss */
+    .services__service-title {
+      width: 100%;
+      font-size: 25px; }
+    /* line 628, scss/style.scss */
+    .services__service-text {
+      margin: 18px 0;
+      width: 100%; }
+  /* line 634, scss/style.scss */
+  .services__btn {
+    width: fit-content; }
+  /* line 640, scss/style.scss */
+  .quote__item {
+    margin-bottom: 25px;
+    font-size: 25px; }
+  /* line 648, scss/style.scss */
+  .prices__subtitle {
+    font-size: 15px; }
+  /* line 652, scss/style.scss */
+  .prices__table {
+    margin-top: 20px 0; }
+    /* line 655, scss/style.scss */
+    .prices__table-title {
+      font-size: 15px; }
+    /* line 659, scss/style.scss */
+    .prices__table-service {
+      font-size: 17px; }
+    /* line 663, scss/style.scss */
+    .prices__table-price {
+      width: 30%; }
+  /* line 670, scss/style.scss */
+  .social-media a {
+    width: 30px;
+    height: 30px; } }
+
+@media screen and (max-width: 615px) {
+  /* line 680, scss/style.scss */
+  .offer__title {
+    font-size: 48px; }
+  /* line 684, scss/style.scss */
+  .offer__image {
+    width: 250px; } }
+
+@media screen and (max-width: 570px) {
+  /* line 692, scss/style.scss */
+  .container {
+    padding: 15px 10px; }
+  /* line 696, scss/style.scss */
+  h2 {
+    font-size: 32px; }
+  /* line 700, scss/style.scss */
+  .contact-details {
+    margin-bottom: 8px; }
+    /* line 703, scss/style.scss */
+    .contact-details a {
+      font-size: 17px; }
+  /* line 709, scss/style.scss */
+  .offer__title {
+    font-size: 40px;
+    line-height: 45px; }
+  /* line 714, scss/style.scss */
+  .offer__text {
+    margin: 15px 0; }
+  /* line 718, scss/style.scss */
+  .offer__image {
+    width: 200px; }
+  /* line 725, scss/style.scss */
+  .quote__item {
+    margin-bottom: 20px;
+    font-size: 18px; }
+  /* line 730, scss/style.scss */
+  .quote__author {
+    font-size: 13px; }
+  /* line 737, scss/style.scss */
+  .contacts__info {
+    flex-direction: column; } }

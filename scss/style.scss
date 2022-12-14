@@ -83,8 +83,6 @@ h2 {
 
 .btn_small {
     padding: 16px 35px;
-    width: 18%;
-    max-height: 58px;
     font-size: 14px;
 }
 
@@ -229,7 +227,7 @@ h2 {
         }
     }
 
-    &-btn {
+    &__btn {
         width: 18%;
         max-height: 58px;
     }
@@ -318,6 +316,8 @@ h2 {
 
     &__text {
         margin: 20px 0 30px 0;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
     }
 
     &__info {
@@ -337,6 +337,7 @@ h2 {
     .container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -352,3 +353,389 @@ h2 {
         }
     }
 }
+
+@media screen and (max-width: 1250px){
+    .container {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .container {
+        margin: 0 20px;
+        padding: 40px 15px;
+    }
+
+    h2 {
+        font-size: 55px;
+    }
+
+    .contact-details a {
+        font-size: 22px;
+    }
+
+    .offer {
+        &__title {
+            font-size: 65px;
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+
+        &__image {
+            margin-top: 60px;
+            width: 320px;
+        }
+    }
+
+    .about {
+        .container {
+            h3 {
+                width: 100%;
+                font-size: 31px;
+            }
+
+            div {
+                width: 100%;
+            }
+        } 
+    }
+
+    .services {
+
+        &__service-title {
+            font-size: 31px;
+        }
+
+        &__btn {
+            width: 20%;
+        }
+    }
+
+    .quote {
+        &__item {
+            font-size: 31px;
+        }
+    }
+
+    .prices {
+        &__table {
+            &-service {
+                font-size: 22px;
+            }    
+        }
+    }
+}
+
+@media screen and (max-width: 952px){ 
+
+    body {
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .btn_big {
+        padding: 16px 35px;
+        font-size: 14px;
+    }
+
+    .btn_small {
+        padding: 14px 25px;
+        font-size: 12px;
+    }
+
+    .header {
+        &__link {
+            font-size: 15px;
+        }
+    }
+
+    .offer {
+        &__title {
+            font-size: 58px;
+        }
+
+        &__image {
+            margin-top: 40px;
+            width: 280px;
+        }
+    }
+
+    .about {
+        .container {
+            h3 {
+                margin-bottom: 35px;
+                font-size: 28px;
+                line-height: 38px;
+            }
+
+            div {
+                margin-bottom: 25px;
+            }
+        }
+         
+    }
+
+    .contact-details {
+        align-items: center;
+        a {
+            font-size: 20px;
+        }  
+
+        &-img {
+            margin-right: 6px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    
+
+    .services {
+        &__service-title {
+            width: 25%;
+            font-size: 28px;
+        }
+
+        &__service-text {
+            width: 45%;
+            font-size: 15px;
+        }
+
+        &__btn {
+            max-height: 48px;
+        }
+    }
+
+    .quote {
+        &__item {
+            font-size: 28px;
+        }
+
+        &__author {
+            font-size: 15px;
+        }
+    }
+
+    .prices {
+        &__table {
+            &-service {
+                font-size: 20px;
+            }    
+
+            &-price {
+                width: 20%;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .footer {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 815px){ 
+
+    body {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .btn_big {
+        padding: 14px 30px;
+    }
+
+    .container {
+        padding: 20px 10px;
+    }
+
+    .header {
+        nav {
+            justify-content: center;
+        }
+
+        &__menu {
+            display: none;
+        }
+        
+    }
+    .offer {
+       
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 52px;
+        }
+
+        &__info {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__text {
+            margin: 30px 0;
+        }
+
+        &__image {
+            margin-top: 30px;
+        }
+    }
+
+    .contact-details {
+        justify-content: center;
+
+        &-img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .about {
+        .container {
+            h3 {
+                margin-bottom: 30px;
+                font-size: 25px;
+                line-height: 35px;
+            }
+
+            div {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .services {
+
+        &__service {
+            padding: 20px 0;
+            flex-direction: column;
+
+            &-title {
+                width: 100%;
+                font-size: 25px;
+            }
+
+            &-text {
+                margin: 18px 0;
+                width: 100%;
+            }
+        }
+
+        &__btn {
+            width: fit-content;
+        }
+    }
+
+    .quote {
+        &__item {
+            margin-bottom: 25px;
+            font-size: 25px;
+        }
+    }
+
+    .prices {
+
+        &__subtitle {
+            font-size: 15px;
+        }
+
+        &__table {
+            margin-top: 20px 0;
+
+            &-title {
+                font-size: 15px;
+            }
+
+            &-service {
+                font-size: 17px;
+            }
+
+            &-price {
+                width: 30%;
+            }
+        }
+    }
+
+    .social-media {
+        a {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 615px){
+    .offer {
+
+        &__title {
+            font-size: 48px;
+        }
+
+        &__image {
+            width: 250px;
+        }
+    }
+ }
+
+ @media screen and (max-width: 570px){ 
+
+    .container {
+        padding: 15px 10px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .contact-details {
+        margin-bottom: 8px;
+
+        a {
+            font-size: 17px;
+        }
+    }
+    .offer {
+
+        &__title {
+            font-size: 40px;
+            line-height: 45px;
+        }
+
+        &__text {
+            margin: 15px 0;
+        }
+
+        &__image {
+            width: 200px;
+        }
+    }
+
+    .quote {
+
+        &__item {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        &__author {
+            font-size: 13px;
+        }
+    }
+
+    .contacts {
+
+        &__info {
+            flex-direction: column;
+        }
+    }
+ }
