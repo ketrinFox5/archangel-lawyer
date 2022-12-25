@@ -38,28 +38,29 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 39, scss/style.scss */
 button {
+  padding: 0;
   text-decoration: none;
   border: none;
   outline: none;
   background: transparent; }
 
-/* line 46, scss/style.scss */
+/* line 47, scss/style.scss */
 .container {
   margin: 0 135px;
   padding: 60px 15px; }
 
-/* line 51, scss/style.scss */
+/* line 52, scss/style.scss */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-/* line 57, scss/style.scss */
+/* line 58, scss/style.scss */
 h2 {
   font-size: 65px;
   font-weight: 400; }
 
-/* line 62, scss/style.scss */
+/* line 63, scss/style.scss */
 .btn {
   padding: 16px 35px;
   font-family: 'Inter', sans-serif;
@@ -70,53 +71,149 @@ h2 {
   transform: scale(1);
   transition: all 0.5s linear 0s;
   cursor: pointer; }
+  /* line 74, scss/style.scss */
+  .btn_white {
+    background-color: #f9f9fb;
+    color: #333; }
+  /* line 79, scss/style.scss */
+  .btn_dark {
+    background-color: #333;
+    color: white; }
+  /* line 84, scss/style.scss */
+  .btn_small {
+    padding: 16px 35px;
+    font-size: 14px; }
+  /* line 89, scss/style.scss */
+  .btn_big {
+    padding: 18px 45px;
+    font-size: 16px;
+    line-height: 1.62; }
+  /* line 95, scss/style.scss */
+  .btn-up {
+    width: 40px;
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px; }
+    /* line 102, scss/style.scss */
+    .btn-up img {
+      width: 100%; }
 
-/* line 74, scss/style.scss */
-.btn_white {
-  background-color: #f9f9fb;
-  color: #333; }
-
-/* line 79, scss/style.scss */
-.btn_dark {
-  background-color: #333;
-  color: white; }
-
-/* line 84, scss/style.scss */
-.btn_small {
-  padding: 16px 35px;
-  font-size: 14px; }
-
-/* line 89, scss/style.scss */
-.btn_big {
-  padding: 18px 45px;
-  font-size: 16px;
-  line-height: 1.62; }
-
-/* line 95, scss/style.scss */
+/* line 108, scss/style.scss */
 .contact-details {
   display: flex; }
-  /* line 98, scss/style.scss */
+  /* line 111, scss/style.scss */
   .contact-details-img {
     margin-right: 8px;
     width: 40px;
     height: 40px; }
-  /* line 104, scss/style.scss */
+  /* line 117, scss/style.scss */
   .contact-details img {
     width: 100%; }
-  /* line 108, scss/style.scss */
+  /* line 121, scss/style.scss */
   .contact-details a {
     font-size: 26px;
     color: white; }
 
-/* line 114, scss/style.scss */
+/* line 127, scss/style.scss */
+.contact-details:hover, .btn:hover, .social-media a:hover, .header__link:hover {
+  opacity: 0.5;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0, 1); }
+
+/* line 133, scss/style.scss */
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 300;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition-property: opacity;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1); }
+  /* line 149, scss/style.scss */
+  .modal__wrap {
+    padding: 40px;
+    max-width: 480px;
+    background: #fff;
+    min-width: 200px;
+    margin: 30px auto 30px;
+    overflow: auto;
+    position: relative;
+    border-radius: 8px;
+    transition-property: margin;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1); }
+  /* line 164, scss/style.scss */
+  .modal__field {
+    margin: 18px 0;
+    padding: 7px 10px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 155%;
+    color: #8787a2;
+    border: 1px solid #e0e0e7;
+    height: auto;
+    border-radius: 6px; }
+  /* line 178, scss/style.scss */
+  .modal__close {
+    width: 16px;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition-property: color;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1); }
+    /* line 189, scss/style.scss */
+    .modal__close img {
+      width: 100%; }
+  /* line 194, scss/style.scss */
+  .modal h2 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 130%; }
+  /* line 203, scss/style.scss */
+  .modal textarea {
+    width: 95%;
+    resize: none;
+    overflow: auto; }
+  /* line 211, scss/style.scss */
+  .modal__btn {
+    width: 100%;
+    color: #fff;
+    background-color: #333; }
+  /* line 217, scss/style.scss */
+  .modal__error {
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; }
+  /* line 223, scss/style.scss */
+  .modal-success {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #333; }
+
+/* line 230, scss/style.scss */
 .header {
   background-color: #253551;
   color: white; }
-  /* line 119, scss/style.scss */
+  /* line 235, scss/style.scss */
   .header__menu {
     display: flex;
     justify-content: space-between; }
-  /* line 125, scss/style.scss */
+  /* line 241, scss/style.scss */
   .header__link {
     padding: 20px 30px;
     font-family: 'Inter', sans-serif;
@@ -125,127 +222,127 @@ h2 {
     text-transform: uppercase;
     color: white; }
 
-/* line 135, scss/style.scss */
+/* line 251, scss/style.scss */
 .offer {
   color: white;
   background-color: #253551; }
-  /* line 139, scss/style.scss */
+  /* line 255, scss/style.scss */
   .offer .container {
     display: flex;
     justify-content: space-between; }
-  /* line 145, scss/style.scss */
+  /* line 261, scss/style.scss */
   .offer__info {
     width: 60%; }
-  /* line 149, scss/style.scss */
+  /* line 265, scss/style.scss */
   .offer__title {
     font-size: 75px;
     font-weight: 400;
     line-height: 75px; }
-  /* line 155, scss/style.scss */
+  /* line 271, scss/style.scss */
   .offer__text {
     margin: 60px 0;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 21px; }
-  /* line 162, scss/style.scss */
+  /* line 278, scss/style.scss */
   .offer__image {
     margin-top: 100px;
     width: 360px;
     max-height: 756px; }
-    /* line 167, scss/style.scss */
+    /* line 283, scss/style.scss */
     .offer__image img {
       width: 100%; }
 
-/* line 173, scss/style.scss */
+/* line 289, scss/style.scss */
 .about {
   background-color: #e0e0db; }
-  /* line 177, scss/style.scss */
+  /* line 293, scss/style.scss */
   .about .container h3 {
     margin-bottom: 45px;
     width: 65%;
     font-size: 36px;
     font-weight: 400;
     line-height: 46px; }
-  /* line 185, scss/style.scss */
+  /* line 301, scss/style.scss */
   .about .container div {
     margin-bottom: 35px;
     width: 65%;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 17px; }
-  /* line 194, scss/style.scss */
+  /* line 310, scss/style.scss */
   .about__btn {
     margin-top: 10px; }
 
-/* line 199, scss/style.scss */
+/* line 315, scss/style.scss */
 .services {
   background-color: #253551;
   color: white; }
-  /* line 203, scss/style.scss */
+  /* line 319, scss/style.scss */
   .services h2 {
     padding-bottom: 30px;
     border-bottom: 2px solid white; }
-  /* line 208, scss/style.scss */
+  /* line 324, scss/style.scss */
   .services__service {
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid white; }
-    /* line 215, scss/style.scss */
+    /* line 331, scss/style.scss */
     .services__service-title {
       width: 20%;
       font-weight: 400;
       font-size: 36px;
       line-height: 40px; }
-    /* line 222, scss/style.scss */
+    /* line 338, scss/style.scss */
     .services__service-text {
       width: 50%;
       font-family: 'Inter', sans-serif;
       font-size: 17px;
       line-height: 162%; }
-  /* line 230, scss/style.scss */
+  /* line 346, scss/style.scss */
   .services__btn {
     width: 18%;
     max-height: 58px; }
 
-/* line 236, scss/style.scss */
+/* line 352, scss/style.scss */
 .quote {
   background-color: #e0e0db; }
-  /* line 239, scss/style.scss */
+  /* line 355, scss/style.scss */
   .quote__item {
     margin-bottom: 45px;
     font-weight: 400;
     font-size: 36px;
     line-height: 124%; }
-  /* line 246, scss/style.scss */
+  /* line 362, scss/style.scss */
   .quote__author {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 17px;
     line-height: 162%; }
 
-/* line 254, scss/style.scss */
+/* line 370, scss/style.scss */
 .prices {
   background-color: #253551;
   color: white; }
-  /* line 258, scss/style.scss */
+  /* line 374, scss/style.scss */
   .prices__subtitle {
     margin-top: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 17px;
     line-height: 162%; }
-  /* line 266, scss/style.scss */
+  /* line 382, scss/style.scss */
   .prices__table {
     margin: 50px 0; }
-    /* line 269, scss/style.scss */
+    /* line 385, scss/style.scss */
     .prices__table-title {
       padding: 20px 15px;
       font-family: 'Inter', sans-serif;
       font-size: 17px;
       line-height: 21px; }
-    /* line 281, scss/style.scss */
+    /* line 397, scss/style.scss */
     .prices__table-item {
       display: flex;
       justify-content: space-between;
@@ -253,17 +350,17 @@ h2 {
       border-right: 1px solid #e0dada;
       border-left: 1px solid #bfbdbd;
       border-top: 1px solid #bfbdbd; }
-    /* line 290, scss/style.scss */
+    /* line 406, scss/style.scss */
     .prices__table-item:last-child {
       border-bottom: 1px solid #bfbdbd; }
-    /* line 294, scss/style.scss */
+    /* line 410, scss/style.scss */
     .prices__table-service {
       padding: 20px 15px;
       width: 90%;
       font-size: 26px;
       line-height: 124%;
       border-right: 1px solid #bfbdbd; }
-    /* line 302, scss/style.scss */
+    /* line 418, scss/style.scss */
     .prices__table-price {
       padding: 20px 15px;
       width: 15%;
@@ -272,21 +369,21 @@ h2 {
       line-height: 21px;
       text-align: right; }
 
-/* line 313, scss/style.scss */
+/* line 429, scss/style.scss */
 .contacts {
   background-color: #253551;
   color: white; }
-  /* line 317, scss/style.scss */
+  /* line 433, scss/style.scss */
   .contacts__text {
     margin: 20px 0 30px 0;
     font-family: 'Inter', sans-serif;
     font-weight: 300; }
-  /* line 323, scss/style.scss */
+  /* line 439, scss/style.scss */
   .contacts__info {
     display: flex;
     justify-content: space-between; }
 
-/* line 329, scss/style.scss */
+/* line 445, scss/style.scss */
 .footer {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
@@ -294,269 +391,286 @@ h2 {
   line-height: 162%;
   background-color: #253551;
   color: white; }
-  /* line 337, scss/style.scss */
+  /* line 453, scss/style.scss */
   .footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center; }
 
-/* line 344, scss/style.scss */
+/* line 460, scss/style.scss */
 .social-media {
   display: flex; }
-  /* line 347, scss/style.scss */
+  /* line 463, scss/style.scss */
   .social-media a {
     width: 40px;
     height: 40px; }
-    /* line 351, scss/style.scss */
+    /* line 467, scss/style.scss */
     .social-media a img {
       width: 100%; }
 
 @media screen and (max-width: 1250px) {
-  /* line 358, scss/style.scss */
+  /* line 474, scss/style.scss */
   .container {
     margin: 0 50px; } }
 
 @media screen and (max-width: 1150px) {
-  /* line 364, scss/style.scss */
+  /* line 480, scss/style.scss */
   .container {
     margin: 0 20px;
     padding: 40px 15px; }
-  /* line 369, scss/style.scss */
+  /* line 485, scss/style.scss */
   h2 {
     font-size: 55px; }
-  /* line 373, scss/style.scss */
+  /* line 489, scss/style.scss */
   .contact-details a {
     font-size: 22px; }
-  /* line 378, scss/style.scss */
+  /* line 494, scss/style.scss */
   .offer__title {
     font-size: 65px; }
-  /* line 382, scss/style.scss */
+  /* line 498, scss/style.scss */
   .offer__text {
     font-size: 18px; }
-  /* line 386, scss/style.scss */
+  /* line 502, scss/style.scss */
   .offer__image {
     margin-top: 60px;
     width: 320px; }
-  /* line 394, scss/style.scss */
+  /* line 510, scss/style.scss */
   .about .container h3 {
     width: 100%;
     font-size: 31px; }
-  /* line 399, scss/style.scss */
+  /* line 515, scss/style.scss */
   .about .container div {
     width: 100%; }
-  /* line 407, scss/style.scss */
+  /* line 523, scss/style.scss */
   .services__service-title {
     font-size: 31px; }
-  /* line 411, scss/style.scss */
+  /* line 527, scss/style.scss */
   .services__btn {
     width: 20%; }
-  /* line 417, scss/style.scss */
+  /* line 533, scss/style.scss */
   .quote__item {
     font-size: 31px; }
-  /* line 424, scss/style.scss */
+  /* line 540, scss/style.scss */
   .prices__table-service {
     font-size: 22px; } }
 
 @media screen and (max-width: 952px) {
-  /* line 433, scss/style.scss */
+  /* line 549, scss/style.scss */
   body {
     font-size: 17px; }
-  /* line 437, scss/style.scss */
+  /* line 553, scss/style.scss */
   h2 {
     font-size: 50px; }
-  /* line 441, scss/style.scss */
+  /* line 558, scss/style.scss */
   .btn_big {
     padding: 16px 35px;
     font-size: 14px; }
-  /* line 446, scss/style.scss */
+  /* line 563, scss/style.scss */
   .btn_small {
     padding: 14px 25px;
     font-size: 12px; }
-  /* line 452, scss/style.scss */
+  /* line 569, scss/style.scss */
   .header__link {
     font-size: 15px; }
-  /* line 458, scss/style.scss */
+  /* line 575, scss/style.scss */
   .offer__title {
     font-size: 58px; }
-  /* line 462, scss/style.scss */
+  /* line 579, scss/style.scss */
   .offer__image {
     margin-top: 40px;
     width: 280px; }
-  /* line 470, scss/style.scss */
+  /* line 587, scss/style.scss */
   .about .container h3 {
     margin-bottom: 35px;
     font-size: 28px;
     line-height: 38px; }
-  /* line 476, scss/style.scss */
+  /* line 593, scss/style.scss */
   .about .container div {
     margin-bottom: 25px; }
-  /* line 483, scss/style.scss */
+  /* line 600, scss/style.scss */
   .contact-details {
     align-items: center; }
-    /* line 485, scss/style.scss */
+    /* line 602, scss/style.scss */
     .contact-details a {
       font-size: 20px; }
-    /* line 489, scss/style.scss */
+    /* line 606, scss/style.scss */
     .contact-details-img {
       margin-right: 6px;
       width: 30px;
       height: 30px; }
-  /* line 498, scss/style.scss */
+  /* line 615, scss/style.scss */
   .services__service-title {
     width: 25%;
     font-size: 28px; }
-  /* line 503, scss/style.scss */
+  /* line 620, scss/style.scss */
   .services__service-text {
     width: 45%;
     font-size: 15px; }
-  /* line 508, scss/style.scss */
+  /* line 625, scss/style.scss */
   .services__btn {
     max-height: 48px; }
-  /* line 514, scss/style.scss */
+  /* line 631, scss/style.scss */
   .quote__item {
     font-size: 28px; }
-  /* line 518, scss/style.scss */
+  /* line 635, scss/style.scss */
   .quote__author {
     font-size: 15px; }
-  /* line 525, scss/style.scss */
+  /* line 642, scss/style.scss */
   .prices__table-service {
     font-size: 20px; }
-  /* line 529, scss/style.scss */
+  /* line 646, scss/style.scss */
   .prices__table-price {
     width: 20%;
     font-size: 15px; }
-  /* line 536, scss/style.scss */
+  /* line 653, scss/style.scss */
   .footer {
     font-size: 15px; } }
 
 @media screen and (max-width: 815px) {
-  /* line 543, scss/style.scss */
+  /* line 660, scss/style.scss */
   body {
     font-size: 15px; }
-  /* line 547, scss/style.scss */
+  /* line 664, scss/style.scss */
   h2 {
     font-size: 40px; }
-  /* line 551, scss/style.scss */
+  /* line 668, scss/style.scss */
   .btn_big {
     padding: 14px 30px; }
-  /* line 555, scss/style.scss */
+  /* line 672, scss/style.scss */
   .container {
     padding: 20px 10px; }
-  /* line 560, scss/style.scss */
+  /* line 677, scss/style.scss */
   .header nav {
     justify-content: center; }
-  /* line 564, scss/style.scss */
+  /* line 681, scss/style.scss */
   .header__menu {
     display: none; }
-  /* line 571, scss/style.scss */
+  /* line 688, scss/style.scss */
   .offer .container {
     flex-direction: column;
     align-items: center; }
-  /* line 576, scss/style.scss */
+  /* line 693, scss/style.scss */
   .offer__title {
     font-size: 52px; }
-  /* line 580, scss/style.scss */
+  /* line 697, scss/style.scss */
   .offer__info {
     width: 100%;
     text-align: center; }
-  /* line 585, scss/style.scss */
+  /* line 702, scss/style.scss */
   .offer__text {
     margin: 30px 0; }
-  /* line 589, scss/style.scss */
+  /* line 706, scss/style.scss */
   .offer__image {
     margin-top: 30px; }
-  /* line 594, scss/style.scss */
+  /* line 711, scss/style.scss */
   .contact-details {
     justify-content: center; }
-    /* line 597, scss/style.scss */
+    /* line 714, scss/style.scss */
     .contact-details-img {
       width: 25px;
       height: 25px; }
-  /* line 605, scss/style.scss */
+  /* line 722, scss/style.scss */
   .about .container h3 {
     margin-bottom: 30px;
     font-size: 25px;
     line-height: 35px; }
-  /* line 611, scss/style.scss */
+  /* line 728, scss/style.scss */
   .about .container div {
     margin-bottom: 20px; }
-  /* line 619, scss/style.scss */
+  /* line 736, scss/style.scss */
   .services__service {
     padding: 20px 0;
     flex-direction: column; }
-    /* line 623, scss/style.scss */
+    /* line 740, scss/style.scss */
     .services__service-title {
       width: 100%;
       font-size: 25px; }
-    /* line 628, scss/style.scss */
+    /* line 745, scss/style.scss */
     .services__service-text {
       margin: 18px 0;
       width: 100%; }
-  /* line 634, scss/style.scss */
+  /* line 751, scss/style.scss */
   .services__btn {
     width: fit-content; }
-  /* line 640, scss/style.scss */
+  /* line 757, scss/style.scss */
   .quote__item {
     margin-bottom: 25px;
     font-size: 25px; }
-  /* line 648, scss/style.scss */
+  /* line 765, scss/style.scss */
   .prices__subtitle {
     font-size: 15px; }
-  /* line 652, scss/style.scss */
+  /* line 769, scss/style.scss */
   .prices__table {
     margin-top: 20px 0; }
-    /* line 655, scss/style.scss */
+    /* line 772, scss/style.scss */
     .prices__table-title {
       font-size: 15px; }
-    /* line 659, scss/style.scss */
+    /* line 776, scss/style.scss */
     .prices__table-service {
       font-size: 17px; }
-    /* line 663, scss/style.scss */
+    /* line 780, scss/style.scss */
     .prices__table-price {
       width: 30%; }
-  /* line 670, scss/style.scss */
+  /* line 787, scss/style.scss */
   .social-media a {
     width: 30px;
     height: 30px; } }
 
 @media screen and (max-width: 615px) {
-  /* line 680, scss/style.scss */
+  /* line 797, scss/style.scss */
   .offer__title {
     font-size: 48px; }
-  /* line 684, scss/style.scss */
+  /* line 801, scss/style.scss */
   .offer__image {
-    width: 250px; } }
+    width: 250px; }
+  /* line 808, scss/style.scss */
+  .modal__wrap {
+    padding: 20px;
+    max-width: 350px; }
+  /* line 813, scss/style.scss */
+  .modal h2 {
+    font-size: 30px; }
+  /* line 817, scss/style.scss */
+  .modal__field {
+    margin: 10px 0;
+    font-size: 15px; }
+  /* line 822, scss/style.scss */
+  .modal textarea {
+    width: 93%; }
+  /* line 826, scss/style.scss */
+  .modal-success {
+    font-size: 15px; } }
 
 @media screen and (max-width: 570px) {
-  /* line 692, scss/style.scss */
+  /* line 834, scss/style.scss */
   .container {
     padding: 15px 10px; }
-  /* line 696, scss/style.scss */
+  /* line 838, scss/style.scss */
   h2 {
     font-size: 32px; }
-  /* line 700, scss/style.scss */
+  /* line 842, scss/style.scss */
   .contact-details {
     margin-bottom: 8px; }
-    /* line 703, scss/style.scss */
+    /* line 845, scss/style.scss */
     .contact-details a {
       font-size: 17px; }
-  /* line 709, scss/style.scss */
+  /* line 851, scss/style.scss */
   .offer__title {
     font-size: 40px;
     line-height: 45px; }
-  /* line 714, scss/style.scss */
+  /* line 856, scss/style.scss */
   .offer__text {
     margin: 15px 0; }
-  /* line 718, scss/style.scss */
+  /* line 860, scss/style.scss */
   .offer__image {
     width: 200px; }
-  /* line 725, scss/style.scss */
+  /* line 867, scss/style.scss */
   .quote__item {
     margin-bottom: 20px;
     font-size: 18px; }
-  /* line 730, scss/style.scss */
+  /* line 872, scss/style.scss */
   .quote__author {
     font-size: 13px; }
-  /* line 737, scss/style.scss */
+  /* line 879, scss/style.scss */
   .contacts__info {
     flex-direction: column; } }

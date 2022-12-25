@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
+    padding: 0;
     text-decoration: none;
     border: none;
     outline: none;
@@ -69,27 +70,39 @@ h2 {
     transform: scale(1);
     transition: all 0.5s linear 0s;
     cursor: pointer;
-}
 
-.btn_white {
-    background-color: rgb(249, 249, 251);
-    color: #333;
-}
+    &_white {
+        background-color: rgb(249, 249, 251);
+        color: #333;
+    }
 
-.btn_dark {
-    background-color: #333;
-    color: white;
-}
+    &_dark {
+        background-color: #333;
+        color: white;
+    }
 
-.btn_small {
-    padding: 16px 35px;
-    font-size: 14px;
-}
+    &_small {
+        padding: 16px 35px;
+        font-size: 14px;
+    }
 
-.btn_big {
-    padding: 18px 45px;
-    font-size: 16px;
-    line-height: 1.62;
+    &_big {
+        padding: 18px 45px;
+        font-size: 16px;
+        line-height: 1.62;
+    }
+
+    &-up {
+        width: 40px;
+        display: none;
+        position:fixed;
+        right: 15px;
+        bottom: 15px;
+      
+        img {
+            width: 100%;
+        }
+    }
 }
 
 .contact-details {
@@ -109,6 +122,109 @@ h2 {
             font-size: 26px;
             color: white;
         }
+}
+
+.contact-details:hover, .btn:hover, .social-media a:hover, .header__link:hover {
+    opacity: 0.5;
+    -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.7);
+    z-index: 300;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    transition-property: opacity;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(.23,1,.32,1);
+
+    &__wrap {
+        padding: 40px;
+        max-width: 480px;
+        background: #fff;
+        min-width: 200px;
+        margin: 30px auto 30px;
+        overflow: auto;
+        position: relative;
+        border-radius: 8px;
+        transition-property: margin;
+        transition-duration: .5s;
+        transition-timing-function: cubic-bezier(.23,1,.32,1);
+       // box-shadow: 0 20px 40px 0 rgb(0 0 0 / 10%);
+    }
+
+    &__field {
+        margin: 18px 0;
+        padding: 7px 10px;
+        width: 100%;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 155%;
+        color: #8787a2;
+        border: 1px solid #e0e0e7;
+        height: auto;
+        border-radius: 6px;
+    }
+
+    &__close {
+        width: 16px;
+        cursor: pointer;
+        z-index: 1;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        transition-property: color;
+        transition-duration: .5s;
+        transition-timing-function: cubic-bezier(.23,1,.32,1);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h2 {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-family: 'Inter', sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    textarea {
+        width: 95%;
+        //height: auto;
+        resize: none;
+        //border: 1px solid #e0e0e7!important;
+        overflow: auto;
+    }
+
+    &__btn {
+        width: 100%;
+        color: #fff;
+        background-color: #333;
+    }
+
+    &__error {
+        display: none;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+    }
+
+    &-success {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        color: #333;
+    }
 }
 
 .header {
@@ -438,6 +554,7 @@ h2 {
         font-size: 50px;
     }
 
+
     .btn_big {
         padding: 16px 35px;
         font-size: 14px;
@@ -683,6 +800,31 @@ h2 {
 
         &__image {
             width: 250px;
+        }
+    }
+
+    .modal {
+
+        &__wrap {
+            padding: 20px;
+            max-width: 350px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        &__field {
+            margin: 10px 0;
+            font-size: 15px;
+        }
+
+        textarea {
+            width: 93%;
+        }
+
+        &-success {
+            font-size: 15px;
         }
     }
  }

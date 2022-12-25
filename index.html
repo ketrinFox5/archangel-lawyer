@@ -12,6 +12,43 @@
         <title>Юридические услуги | Помогаю решать юридические вопросы | Архангельский Данила</title>
     </head>
     <body>
+
+        <div class="modal" id="modal-success">
+            <div class="modal__wrap">
+                <div class="modal-success">
+                    Ваше сообщение успешно отправлено! Спасибо за заявку!
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal__wrap">
+                <button class="modal__close">
+                    <img src="img/1544641784.png" alt="">
+                </button>
+                <h2>
+                    Заявка
+                </h2>
+                <form action="#" class="modal__form" id="form">
+                    <div class="form-field">
+                        <input type="text" id="userName" placeholder="Ваше ФИО" class="modal__field" name="user_name" required> 
+                    </div>
+                    <div class="form-field">
+                        <input type="email" id="mail" placeholder="E-mail" class="modal__field" name="user_email" required> 
+                    </div>
+                    <div class="form-field">
+                        <input type="tel" class="modal__field" placeholder="+79991234567 (необязательно)" id="phone" name="user_phone" pattern="\+[7][0-9]{10}">
+                    </div>
+                    <div>
+                        <textarea class="modal__field" name="message" id="msg" placeholder="Ваше сообщение" required></textarea>
+                    </div>
+                    <button type="submit" class="btn modal__btn" id="modal-submit">
+                        Отправить
+                    </button>
+                    <span class="modal__error" id="sendError">Извините произошла ошибка. Попробуйте позже.</span>
+                </form>
+            </div>
+        </div>
+
         <header class="header">
             <div class="container">
                 <nav>
@@ -254,5 +291,9 @@
                 </div>
             </div>
         </footer>
+        <button class="btn-up">
+            <img src="img/arrow_up_inv.png" alt="">
+        </button>
+        <script src="/index.js"></script>
     </body>
 </html>
