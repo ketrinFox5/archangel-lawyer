@@ -71,22 +71,22 @@ h2 {
     transition: all 0.5s linear 0s;
     cursor: pointer;
 
-    &_white {
+    &-white {
         background-color: rgb(249, 249, 251);
         color: #333;
     }
 
-    &_dark {
+    &-dark {
         background-color: #333;
         color: white;
     }
 
-    &_small {
+    &-small {
         padding: 16px 35px;
         font-size: 14px;
     }
 
-    &_big {
+    &-big {
         padding: 18px 45px;
         font-size: 16px;
         line-height: 1.62;
@@ -98,6 +98,7 @@ h2 {
         position:fixed;
         right: 15px;
         bottom: 15px;
+        cursor: pointer;
       
         img {
             width: 100%;
@@ -141,7 +142,6 @@ h2 {
     z-index: 300;
     overflow-x: hidden;
     overflow-y: auto;
-    
     transition-property: opacity;
     transition-duration: .5s;
     transition-timing-function: cubic-bezier(.23,1,.32,1);
@@ -158,7 +158,6 @@ h2 {
         transition-property: margin;
         transition-duration: .5s;
         transition-timing-function: cubic-bezier(.23,1,.32,1);
-       // box-shadow: 0 20px 40px 0 rgb(0 0 0 / 10%);
     }
 
     &__field {
@@ -202,9 +201,7 @@ h2 {
 
     textarea {
         width: 95%;
-        //height: auto;
         resize: none;
-        //border: 1px solid #e0e0e7!important;
         overflow: auto;
     }
 
@@ -228,7 +225,6 @@ h2 {
 }
 
 .header {
-    // padding: 50px 0;
     background-color: rgb(37, 53, 81);
     color: white;
 
@@ -255,7 +251,6 @@ h2 {
     .container {
         display: flex;
         justify-content: space-between;
-        // align-items: center;
     }
 
     &__info {
@@ -389,11 +384,6 @@ h2 {
             line-height: 21px;
         }
 
-        // &-title:last-child {
-        //     // width: 90%;
-        //     border-left: 1px solid #bfbdbd;
-        // }
-
         &-item {
             display: flex;
             justify-content: space-between;
@@ -491,6 +481,7 @@ h2 {
     }
 
     .offer {
+
         &__title {
             font-size: 65px;
         }
@@ -506,7 +497,9 @@ h2 {
     }
 
     .about {
+
         .container {
+
             h3 {
                 width: 100%;
                 font-size: 31px;
@@ -530,13 +523,16 @@ h2 {
     }
 
     .quote {
+
         &__item {
             font-size: 31px;
         }
     }
 
     .prices {
+
         &__table {
+
             &-service {
                 font-size: 22px;
             }    
@@ -566,12 +562,14 @@ h2 {
     }
 
     .header {
+
         &__link {
             font-size: 15px;
         }
     }
 
     .offer {
+
         &__title {
             font-size: 58px;
         }
@@ -583,7 +581,9 @@ h2 {
     }
 
     .about {
+
         .container {
+
             h3 {
                 margin-bottom: 35px;
                 font-size: 28px;
@@ -599,6 +599,7 @@ h2 {
 
     .contact-details {
         align-items: center;
+
         a {
             font-size: 20px;
         }  
@@ -612,6 +613,7 @@ h2 {
     
 
     .services {
+        
         &__service-title {
             width: 25%;
             font-size: 28px;
@@ -628,6 +630,7 @@ h2 {
     }
 
     .quote {
+
         &__item {
             font-size: 28px;
         }
@@ -638,7 +641,9 @@ h2 {
     }
 
     .prices {
+
         &__table {
+
             &-service {
                 font-size: 20px;
             }    
@@ -674,6 +679,7 @@ h2 {
     }
 
     .header {
+
         nav {
             justify-content: center;
         }
@@ -718,7 +724,9 @@ h2 {
     }
 
     .about {
+
         .container {
+
             h3 {
                 margin-bottom: 30px;
                 font-size: 25px;
@@ -754,6 +762,7 @@ h2 {
     }
 
     .quote {
+
         &__item {
             margin-bottom: 25px;
             font-size: 25px;
@@ -784,6 +793,7 @@ h2 {
     }
 
     .social-media {
+
         a {
             width: 30px;
             height: 30px;

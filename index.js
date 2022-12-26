@@ -1,10 +1,14 @@
-let modal = document.getElementById('modal');
-let openModalBtn = document.querySelectorAll('.btn');
+const modal = document.getElementById('modal');
+const form = document.querySelector('form');
+const openModalBtn = document.querySelectorAll('.btn');
 const closeModalBtn = document.querySelector('.modal__close');
 const modalSuccess = document.getElementById('modal-success');
 const modalSendError = document.getElementById('sendError');
-const form = document.querySelector('form');
 const btnUp = document.querySelector('.btn-up');
+
+const dataJs = {
+    "access_token": "x3ie3xp8yipmisiwd2yh4z2s"
+};
 
 closeModalBtn.onclick = function() {
     modal.style.display = "none";
@@ -39,10 +43,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
-const dataJs = {
-    "access_token": "x3ie3xp8yipmisiwd2yh4z2s"
-};
 
 function toParams(data_js) {
     let form_data = [];
