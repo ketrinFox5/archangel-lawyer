@@ -1,9 +1,11 @@
+@import "./variables.scss";
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    color: rgb(51, 51, 51);
+    font-family: $ff-Display;
+    font-size: $font-20px;
+    color: $color-black;
 }
 
 div, p, form, input, a, span, button {
@@ -28,7 +30,7 @@ p {
 
 a {
     text-decoration: none;
-    background-color: transparent;
+    background-color: $color-transparent;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,8 +47,8 @@ button {
 }
 
 .container {
-    margin: 0 135px;
-    padding: 60px 15px;
+    margin: $container-mr-big;
+    padding: $container-pd-big;
 }
 
 nav {
@@ -56,14 +58,14 @@ nav {
 }
 
 h2 {
-    font-size: 65px;
-    font-weight: 400;
+    font-size: $font-65px;
+    font-weight: $fw-400;
 }
 
 .btn {
     padding: 16px 35px;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-family: $ff-Inter;
+    font-size: $font-14px;
     border-radius: 50px;
     box-shadow: none;
     text-transform: uppercase;
@@ -72,24 +74,24 @@ h2 {
     cursor: pointer;
 
     &-white {
-        background-color: rgb(249, 249, 251);
-        color: #333;
+        background-color: $color-white;
+        color: $color-black;
     }
 
     &-dark {
-        background-color: #333;
-        color: white;
+        background-color: $color-black;
+        color: $color-white;
     }
 
     &-small {
         padding: 16px 35px;
-        font-size: 14px;
+        font-size: $font-14px;
     }
 
     &-big {
         padding: 18px 45px;
-        font-size: 16px;
-        line-height: 1.62;
+        font-size: $font-16px;
+        line-height: $lh-1-62;
     }
 
     &-up {
@@ -101,7 +103,7 @@ h2 {
         cursor: pointer;
       
         img {
-            width: 100%;
+            width: $w100;
         }
     }
 }
@@ -116,12 +118,12 @@ h2 {
         }
 
         img {
-            width: 100%;
+            width: $w100;
         }
         
         a {
-            font-size: 26px;
-            color: white;
+            font-size: $font-26px;
+            color: $color-white;
         }
 }
 
@@ -138,7 +140,7 @@ h2 {
     top: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,.7);
+    background: rgba($color-black,.7);
     z-index: 300;
     overflow-x: hidden;
     overflow-y: auto;
@@ -149,7 +151,7 @@ h2 {
     &__wrap {
         padding: 40px;
         max-width: 480px;
-        background: #fff;
+        background: $color-white;
         min-width: 200px;
         margin: 30px auto 30px;
         overflow: auto;
@@ -163,13 +165,13 @@ h2 {
     &__field {
         margin: 18px 0;
         padding: 7px 10px;
-        width: 100%;
-        font-family: 'Inter', sans-serif;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 155%;
-        color: #8787a2;
-        border: 1px solid #e0e0e7;
+        width: $w100;
+        font-family: $ff-Inter;
+        font-size: $font-18px;
+        font-weight: $fw-300;
+        line-height: $lh-155;
+        color: $color-gray;
+        border: 1px solid $color-gray-light;
         height: auto;
         border-radius: 6px;
     }
@@ -186,17 +188,17 @@ h2 {
         transition-timing-function: cubic-bezier(.23,1,.32,1);
 
         img {
-            width: 100%;
+            width: $w100;
         }
     }
 
     h2 {
         margin-top: 5px;
         margin-bottom: 15px;
-        font-family: 'Inter', sans-serif;
-        font-size: 36px;
-        font-weight: 400;
-        line-height: 130%;
+        font-family: $ff-Inter;
+        font-size: $font-36px;
+        font-weight: $fw-400;
+        line-height: $lh-130;
     }
 
     textarea {
@@ -206,27 +208,27 @@ h2 {
     }
 
     &__btn {
-        width: 100%;
-        color: #fff;
-        background-color: #333;
+        width: $w100;
+        color: $color-white;
+        background-color: $color-black;
     }
 
     &__error {
         display: none;
-        font-family: 'Inter', sans-serif;
-        font-size: 16px;
+        font-family: $ff-Inter;
+        font-size: $font-16px;
     }
 
     &-success {
-        font-family: 'Inter', sans-serif;
-        font-size: 20px;
-        color: #333;
+        font-family: $ff-Inter;
+        font-size: $font-20px;
+        color: $color-black;
     }
 }
 
 .header {
-    background-color: rgb(37, 53, 81);
-    color: white;
+    background-color: $color-blue;
+    color: $color-white;
 
     &__menu {
         display: flex;
@@ -236,17 +238,17 @@ h2 {
 
     &__link {
         padding: 20px 30px;
-        font-family: 'Inter', sans-serif;
-        font-weight: 400;
-        font-size: 17px;
+        font-family: $ff-Inter;
+        font-weight: $fw-400;
+        font-size: $font-17px;
         text-transform: uppercase;
-        color: white;
+        color: $color-white;
     }
 }
 
 .offer {
-    color: white;
-    background-color: rgb(37, 53, 81);
+    color: $color-white;
+    background-color: $color-blue;
 
     .container {
         display: flex;
@@ -258,16 +260,16 @@ h2 {
     }
 
     &__title {
-        font-size: 75px;
-        font-weight: 400;
-        line-height: 75px;
+        font-size: $font-75px;
+        font-weight: $fw-400;
+        line-height: $lh-75;
     }
 
     &__text {
         margin: 60px 0;
-        font-family: 'Inter', sans-serif;
-        font-weight: 300;
-        font-size: 21px;
+        font-family: $ff-Inter;
+        font-weight: $fw-300;
+        font-size: $font-21px;
     }
 
     &__image {
@@ -276,29 +278,29 @@ h2 {
         max-height: 756px;
 
         img {
-            width: 100%;
+            width: $w100;
         }
     }
 }
 
 .about {
-    background-color: #e0e0db;
+    background-color: $color-gray-light;
 
     .container {
         h3 {
             margin-bottom: 45px;
             width: 65%;
-            font-size: 36px;
-            font-weight: 400;
-            line-height: 46px;
+            font-size: $font-36px;
+            font-weight: $fw-400;
+            line-height: $lh-46;
         }
     
         div {
             margin-bottom: 35px;
             width: 65%;
-            font-family: 'Inter', sans-serif;
-            font-weight: 300;
-            font-size: 17px;
+            font-family: $ff-Inter;
+            font-weight: $fw-300;
+            font-size: $font-17px;
         }
     }
 
@@ -308,12 +310,12 @@ h2 {
 }
 
 .services {
-    background-color: rgb(37, 53, 81);
-    color: white;
+    background-color: $color-blue;
+    color: $color-white;
 
     h2 {
         padding-bottom: 30px;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid $color-white;
     }
 
     &__service {
@@ -321,20 +323,20 @@ h2 {
         padding-bottom: 40px;
         display: flex;
         justify-content: space-between;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid $color-white;
 
         &-title {
             width: 20%;
-            font-weight: 400;
-            font-size: 36px;
-            line-height: 40px;
+            font-weight: $fw-400;
+            font-size: $font-36px;
+            line-height: $lh-40;
         }
 
         &-text {
             width: 50%;
-            font-family: 'Inter', sans-serif;
-            font-size: 17px;
-            line-height: 162%;
+            font-family: $ff-Inter;
+            font-size: $font-17px;
+            line-height: $lh-162;
         }
     }
 
@@ -345,33 +347,33 @@ h2 {
 }
 
 .quote {
-    background-color: #e0e0db;
+    background-color: $color-gray-light;
 
     &__item {
         margin-bottom: 45px;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 124%;
+        font-weight: $fw-400;
+        font-size: $font-36px;
+        line-height: $lh-124;
     }
 
     &__author {
-        font-family: 'Inter', sans-serif;
-        font-weight: 300;
-        font-size: 17px;
-        line-height: 162%;
+        font-family: $ff-Inter;
+        font-weight: $fw-300;
+        font-size: $font-17px;
+        line-height: $lh-162;
     }
 }
 
 .prices {
-    background-color: rgb(37, 53, 81);
-    color: white;
+    background-color: $color-blue;
+    color: $color-white;
 
     &__subtitle {
         margin-top: 20px;
-        font-family: 'Inter', sans-serif;
-        font-weight: 300;
-        font-size: 17px;
-        line-height: 162%;
+        font-family: $ff-Inter;
+        font-weight: $fw-300;
+        font-size: $font-17px;
+        line-height: $lh-162;
     }
 
     &__table {
@@ -379,51 +381,51 @@ h2 {
 
         &-title {
             padding: 20px 15px;
-            font-family: 'Inter', sans-serif;
-            font-size: 17px;
-            line-height: 21px;
+            font-family: $ff-Inter;
+            font-size: $font-17px;
+            line-height: $lh-21;
         }
 
         &-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-right: 1px solid #e0dada;
-            border-left: 1px solid #bfbdbd;
-            border-top: 1px solid #bfbdbd;
+            border-right: 1px solid $color-gray-light;
+            border-left: 1px solid $color-gray-light;
+            border-top: 1px solid $color-gray-light;
         }
 
         &-item:last-child {
-            border-bottom: 1px solid #bfbdbd;
+            border-bottom: 1px solid $color-gray-light;
         }
 
         &-service {
             padding: 20px 15px;
             width: 90%;
-            font-size: 26px;
-            line-height: 124%;
-            border-right: 1px solid #bfbdbd;
+            font-size: $font-26px;
+            line-height: $lh-124;
+            border-right: 1px solid $color-gray-light;
         }
 
         &-price {
             padding: 20px 15px;
             width: 15%;
-            font-family: 'Inter', sans-serif;
-            font-size: 17px;
-            line-height: 21px;
+            font-family: $ff-Inter;
+            font-size: $font-17px;
+            line-height: $lh-21;
             text-align: right;
         }
     }
 }
 
 .contacts {
-    background-color: rgb(37, 53, 81);
-    color: white;
+    background-color: $color-blue;
+    color: $color-white;
 
     &__text {
         margin: 20px 0 30px 0;
-        font-family: 'Inter', sans-serif;
-        font-weight: 300;
+        font-family: $ff-Inter;
+        font-weight: $fw-300;
     }
 
     &__info {
@@ -433,12 +435,12 @@ h2 {
 }
 
 .footer {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 21px;
-    line-height: 162%;
-    background-color: rgb(37, 53, 81);
-    color: white;
+    font-family: $ff-Inter;
+    font-weight: $fw-300;
+    font-size: $font-21px;
+    line-height: $lh-162;
+    background-color: $color-blue;
+    color: $color-white;
 
     .container {
         display: flex;
@@ -455,39 +457,39 @@ h2 {
         height: 40px;
 
         img {
-            width: 100%;
+            width: $w100;
         }
     }
 }
 
 @media screen and (max-width: 1250px){
     .container {
-        margin: 0 50px;
+        margin: $container-mr-1250px;
     }
 }
 
 @media screen and (max-width: 1150px){
     .container {
-        margin: 0 20px;
-        padding: 40px 15px;
+        margin: $container-mr-1150px;
+        padding: $container-pd-1150px;
     }
 
     h2 {
-        font-size: 55px;
+        font-size: $font-55px;
     }
 
     .contact-details a {
-        font-size: 22px;
+        font-size: $font-22px;
     }
 
     .offer {
 
         &__title {
-            font-size: 65px;
+            font-size: $font-65px;
         }
 
         &__text {
-            font-size: 18px;
+            font-size: $font-18px;
         }
 
         &__image {
@@ -501,12 +503,12 @@ h2 {
         .container {
 
             h3 {
-                width: 100%;
-                font-size: 31px;
+                width: $w100;
+                font-size: $font-31px;
             }
 
             div {
-                width: 100%;
+                width: $w100;
             }
         } 
     }
@@ -514,7 +516,7 @@ h2 {
     .services {
 
         &__service-title {
-            font-size: 31px;
+            font-size: $font-31px;
         }
 
         &__btn {
@@ -525,7 +527,7 @@ h2 {
     .quote {
 
         &__item {
-            font-size: 31px;
+            font-size: $font-31px;
         }
     }
 
@@ -534,7 +536,7 @@ h2 {
         &__table {
 
             &-service {
-                font-size: 22px;
+                font-size: $font-22px;
             }    
         }
     }
@@ -543,35 +545,35 @@ h2 {
 @media screen and (max-width: 952px){ 
 
     body {
-        font-size: 17px;
+        font-size: $font-17px;
     }
 
     h2 {
-        font-size: 50px;
+        font-size: $font-50px;
     }
 
 
     .btn_big {
         padding: 16px 35px;
-        font-size: 14px;
+        font-size: $font-14px;
     }
 
     .btn_small {
         padding: 14px 25px;
-        font-size: 12px;
+        font-size: $font-12px;
     }
 
     .header {
 
         &__link {
-            font-size: 15px;
+            font-size: $font-15px;
         }
     }
 
     .offer {
 
         &__title {
-            font-size: 58px;
+            font-size: $font-58px;
         }
 
         &__image {
@@ -586,8 +588,8 @@ h2 {
 
             h3 {
                 margin-bottom: 35px;
-                font-size: 28px;
-                line-height: 38px;
+                font-size: $font-28px;
+                line-height: $lh-38;
             }
 
             div {
@@ -601,7 +603,7 @@ h2 {
         align-items: center;
 
         a {
-            font-size: 20px;
+            font-size: $font-20px;
         }  
 
         &-img {
@@ -616,12 +618,12 @@ h2 {
         
         &__service-title {
             width: 25%;
-            font-size: 28px;
+            font-size: $font-28px;
         }
 
         &__service-text {
             width: 45%;
-            font-size: 15px;
+            font-size: $font-15px;
         }
 
         &__btn {
@@ -632,11 +634,11 @@ h2 {
     .quote {
 
         &__item {
-            font-size: 28px;
+            font-size: $font-28px;
         }
 
         &__author {
-            font-size: 15px;
+            font-size: $font-15px;
         }
     }
 
@@ -645,29 +647,29 @@ h2 {
         &__table {
 
             &-service {
-                font-size: 20px;
+                font-size: $font-20px;
             }    
 
             &-price {
                 width: 20%;
-                font-size: 15px;
+                font-size: $font-15px;
             }
         }
     }
 
     .footer {
-        font-size: 15px;
+        font-size: $font-15px;
     }
 }
 
 @media screen and (max-width: 815px){ 
 
     body {
-        font-size: 15px;
+        font-size: $font-15px;
     }
 
     h2 {
-        font-size: 40px;
+        font-size: $font-40px;
     }
 
     .btn_big {
@@ -675,7 +677,7 @@ h2 {
     }
 
     .container {
-        padding: 20px 10px;
+        padding: $container-pd-815px;
     }
 
     .header {
@@ -697,11 +699,11 @@ h2 {
         }
 
         &__title {
-            font-size: 52px;
+            font-size: $font-52px;
         }
 
         &__info {
-            width: 100%;
+            width: $w100;
             text-align: center;
         }
 
@@ -729,8 +731,8 @@ h2 {
 
             h3 {
                 margin-bottom: 30px;
-                font-size: 25px;
-                line-height: 35px;
+                font-size: $font-25px;
+                line-height: $lh-35;
             }
 
             div {
@@ -746,13 +748,13 @@ h2 {
             flex-direction: column;
 
             &-title {
-                width: 100%;
-                font-size: 25px;
+                width: $w100;
+                font-size: $font-25px;
             }
 
             &-text {
                 margin: 18px 0;
-                width: 100%;
+                width: $w100;
             }
         }
 
@@ -765,25 +767,25 @@ h2 {
 
         &__item {
             margin-bottom: 25px;
-            font-size: 25px;
+            font-size: $font-25px;
         }
     }
 
     .prices {
 
         &__subtitle {
-            font-size: 15px;
+            font-size: $font-15px;
         }
 
         &__table {
             margin-top: 20px 0;
 
             &-title {
-                font-size: 15px;
+                font-size: $font-15px;
             }
 
             &-service {
-                font-size: 17px;
+                font-size: $font-17px;
             }
 
             &-price {
@@ -805,7 +807,7 @@ h2 {
     .offer {
 
         &__title {
-            font-size: 48px;
+            font-size: $font-48px;
         }
 
         &__image {
@@ -821,12 +823,12 @@ h2 {
         }
 
         h2 {
-            font-size: 30px;
+            font-size: $font-30px;
         }
 
         &__field {
             margin: 10px 0;
-            font-size: 15px;
+            font-size: $font-15px;
         }
 
         textarea {
@@ -834,7 +836,7 @@ h2 {
         }
 
         &-success {
-            font-size: 15px;
+            font-size: $font-15px;
         }
     }
  }
@@ -842,25 +844,25 @@ h2 {
  @media screen and (max-width: 570px){ 
 
     .container {
-        padding: 15px 10px;
+        padding: $container-pd-570px;
     }
 
     h2 {
-        font-size: 32px;
+        font-size: $font-32px;
     }
 
     .contact-details {
         margin-bottom: 8px;
 
         a {
-            font-size: 17px;
+            font-size: $font-17px;
         }
     }
     .offer {
 
         &__title {
-            font-size: 40px;
-            line-height: 45px;
+            font-size: $font-40px;
+            line-height: $lh-45;
         }
 
         &__text {
@@ -876,11 +878,11 @@ h2 {
 
         &__item {
             margin-bottom: 20px;
-            font-size: 18px;
+            font-size: $font-18px;
         }
 
         &__author {
-            font-size: 13px;
+            font-size: $font-13px;
         }
     }
 
