@@ -100,7 +100,7 @@ h2 {
 /* line 75, css/scss/style.css */
 /* line 89, css/css/scss/style.css */
 .btn-white {
-  background-color: #f9f9fb;
+  background-color: #F9F9FB;
   color: #333; }
 
 /* line 81, scss/style.scss */
@@ -108,7 +108,7 @@ h2 {
 /* line 95, css/css/scss/style.css */
 .btn-dark {
   background-color: #333;
-  color: #f9f9fb; }
+  color: #F9F9FB; }
 
 /* line 86, scss/style.scss */
 /* line 83, css/scss/style.css */
@@ -167,7 +167,7 @@ h2 {
 /* line 146, css/css/scss/style.css */
 .contact-details a {
   font-size: 26px;
-  color: #f9f9fb; }
+  color: #F9F9FB; }
 
 /* line 130, scss/style.scss */
 /* line 120, css/scss/style.css */
@@ -201,7 +201,7 @@ h2 {
 .modal__wrap {
   padding: 40px;
   max-width: 480px;
-  background: #f9f9fb;
+  background: #F9F9FB;
   min-width: 200px;
   margin: 30px auto 30px;
   overflow: auto;
@@ -271,7 +271,7 @@ h2 {
 /* line 241, css/css/scss/style.css */
 .modal__btn {
   width: 100%;
-  color: #f9f9fb;
+  color: #F9F9FB;
   background-color: #333; }
 
 /* line 216, scss/style.scss */
@@ -295,7 +295,7 @@ h2 {
 /* line 262, css/css/scss/style.css */
 .header {
   background-color: #253551;
-  color: #f9f9fb; }
+  color: #F9F9FB; }
 
 /* line 233, scss/style.scss */
 /* line 214, css/scss/style.css */
@@ -313,13 +313,13 @@ h2 {
   font-weight: 400;
   font-size: 17px;
   text-transform: uppercase;
-  color: #f9f9fb; }
+  color: #F9F9FB; }
 
 /* line 249, scss/style.scss */
 /* line 227, css/scss/style.css */
 /* line 284, css/css/scss/style.css */
 .offer {
-  color: #f9f9fb;
+  color: #F9F9FB;
   background-color: #253551; }
 
 /* line 253, scss/style.scss */
@@ -403,14 +403,14 @@ h2 {
 /* line 356, css/css/scss/style.css */
 .services {
   background-color: #253551;
-  color: #f9f9fb; }
+  color: #F9F9FB; }
 
 /* line 316, scss/style.scss */
 /* line 283, css/scss/style.css */
 /* line 362, css/css/scss/style.css */
 .services h2 {
   padding-bottom: 30px;
-  border-bottom: 2px solid #f9f9fb; }
+  border-bottom: 2px solid #F9F9FB; }
 
 /* line 321, scss/style.scss */
 /* line 287, css/scss/style.css */
@@ -420,7 +420,7 @@ h2 {
   padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #f9f9fb; }
+  border-bottom: 2px solid #F9F9FB; }
 
 /* line 328, scss/style.scss */
 /* line 294, css/scss/style.css */
@@ -476,7 +476,7 @@ h2 {
 /* line 420, css/css/scss/style.css */
 .prices {
   background-color: #253551;
-  color: #f9f9fb; }
+  color: #F9F9FB; }
 
 /* line 371, scss/style.scss */
 /* line 331, css/scss/style.css */
@@ -546,7 +546,7 @@ h2 {
 /* line 482, css/css/scss/style.css */
 .contacts {
   background-color: #253551;
-  color: #f9f9fb; }
+  color: #F9F9FB; }
 
 /* line 425, scss/style.scss */
 /* line 378, css/scss/style.css */
@@ -572,7 +572,7 @@ h2 {
   font-size: 21px;
   line-height: 162%;
   background-color: #253551;
-  color: #f9f9fb; }
+  color: #F9F9FB; }
 
 /* line 445, scss/style.scss */
 /* line 396, css/scss/style.css */
